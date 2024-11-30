@@ -3,6 +3,30 @@
 #include <stdlib.h>
 #include <string.h>
 
+// 정렬 함수 제작
+struct person {
+    int month;
+    int day;
+    char name[20];
+    char etc[100];
+};
+int compare_name(const void* a, const void* b) {
+    struct person* personA = (struct person*)a;
+    struct person* personB = (struct person*)b;
+    return strcmp(personA->name, personB->name);
+}
+int compare_date(const void* a, const void* b) {
+    struct person* personA = (struct person*)a;
+    struct person* personB = (struct person*)b;
+
+    // 월
+    if (personA->month != personB->month) {
+        return personA->month - personB->month;
+    }
+    // 일
+    return personA->day - personB->day;
+}
+
 // 기본 입력 제작
 int main() {
     FILE* fp;
