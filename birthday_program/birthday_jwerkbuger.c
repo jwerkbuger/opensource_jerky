@@ -2,31 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define MAX 100 // 임의 선정
-
-// 정렬 함수 제작
-struct person {
-    int month;
-    int day;
-    char name[20];
-    char etc[100];
-};
-int compare_name(const void* a, const void* b) {
-    struct person* personA = (struct person*)a;
-    struct person* personB = (struct person*)b;
-    return strcmp(personA->name, personB->name);
-}
-int compare_date(const void* a, const void* b) {
-    struct person* personA = (struct person*)a;
-    struct person* personB = (struct person*)b;
-
-    // 월
-    if (personA->month != personB->month) {
-        return personA->month - personB->month;
-    }
-    // 일
-    return personA->day - personB->day;
-}
 
 // 기본 입력 제작
 int main() {
@@ -37,9 +12,7 @@ int main() {
         exit(1);
     }
 
-    struct person people[MAX];
     int cnt = 0;
-    char search[10];
     do {
         int choice = 0;
 
@@ -52,28 +25,29 @@ int main() {
             break;
         }
 
+        int month = 0, day = 0;
+        char name[20];
+        char etc[100];
+        char search[10];
+
         switch (choice) {
         case 1:
-            if (cnt >= MAX) {
-                printf("정원 초과 입니다.\n");
-                break;
-            }
+            cnt++;
 
             printf("양식에 맞춰 입력해주세요.\n");
             printf("날짜(00/00) : ");
-            scanf("%d/%d", &people[cnt].month, &people[cnt].day);
+            scanf("%d/%d", &month, &day);
+            fprintf(fp, "%d/%d ", month, day);
 
             printf("이름 : ");
-            scanf("%s", people[cnt].name);
+            scanf("%s", name);
+            fprintf(fp, "%s ", name);
 
             printf("기타(비고) : ");
-            scanf("%s", people[cnt].etc);
-            fprintf(fp, "%d/%d %s %s\n", people[cnt].month, people[cnt].day, people[cnt].name, people[cnt].etc);
+            scanf("%s", etc);
+            fprintf(fp, "%s\n", etc);
 
             printf("저장이 완료되었습니다.\n");
-            cnt++;
-<<<<<<< HEAD
-=======
             break; 
         case 2:
             printf("정렬하실 방법(추가/이름/날짜) 혹은 이름을 입력해주세요.\n");
@@ -102,7 +76,6 @@ int main() {
             break;
         case 3:
             printf("수정 기능은 아직 지원하지 않습니다.\n");
->>>>>>> 8a8b4f45da802ff7e044179bba9d6e3275e97f1e
             break;
         }
     } while (1);
