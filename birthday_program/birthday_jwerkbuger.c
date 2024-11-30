@@ -71,7 +71,7 @@ int main() {
 
             printf("저장이 완료되었습니다.\n");
             cnt++;
-            break; 
+            break;
         }
     } while (1);
 
