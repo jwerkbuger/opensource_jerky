@@ -1,12 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mayma\\OneDrive\\Desktop\\open_source\\birthday_jwerkbuger\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{693EAA4C-80E5-4908-8FAB-0A003B9741BF}|birthday_jwerkbuger.vcxproj|C:\\Users\\mayma\\OneDrive\\Desktop\\open_source\\birthday_jwerkbuger\\birthday_jwerkbuger.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{693EAA4C-80E5-4908-8FAB-0A003B9741BF}|birthday_jwerkbuger.vcxproj|solutionrelative:birthday_jwerkbuger.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\mayma\\OneDrive\\Desktop\\open_source\\birthday_program\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,24 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "birthday_jwerkbuger.c",
-              "DocumentMoniker": "C:\\Users\\mayma\\OneDrive\\Desktop\\open_source\\birthday_jwerkbuger\\birthday_jwerkbuger.c",
-              "RelativeDocumentMoniker": "birthday_jwerkbuger.c",
-              "ToolTip": "C:\\Users\\mayma\\OneDrive\\Desktop\\open_source\\birthday_jwerkbuger\\birthday_jwerkbuger.c",
-              "RelativeToolTip": "birthday_jwerkbuger.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-11-30T20:11:34.304Z",
-              "EditorCaption": ""
             }
           ]
         }
